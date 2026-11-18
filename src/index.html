@@ -24,13 +24,12 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
       </div>
       <span class="spread__fold" aria-hidden="true"></span>
       <div class="spread__panel rsvp">
-        <p class="kicker">Donation to attend</p>
         <p class="rsvp__title">Bi One, Get One<span class="rsvp__sub">Black Friday · Nov 27</span></p>
         {TARIFF}
         <ol class="route" aria-label="How access works">
           <li><b>Request access</b> on our booking page</li>
           <li><b>We review you</b> — every guest, every time</li>
-          <li class="route__sealed"><b>Get the address</b> once you're approved<span class="seal" aria-hidden="true">sealed</span></li>
+          <li class="route__sealed"><b>Get the address</b> once you're approved <span class="seal seal--mono seal--inline" aria-hidden="true">B</span></li>
         </ol>
         <p class="rsvp__note">Donations are final — no refunds.</p>
       </div>
@@ -56,7 +55,6 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
       <figcaption>Summer &amp; Mike, your hosts</figcaption>
     </figure>
     <div>
-      <p class="kicker">Who's vetting the room</p>
       <h2 id="hosts-h">Hosted by Summer &amp; Mike.</h2>
       <p class="lede">We're a DFW couple. We started The BiFold because bi play still gets side‑eyed at most lifestyle parties. Here, it's the whole idea.</p>
       <p class="creds-line">Ten‑plus years in the lifestyle. Three‑plus years hosting high‑end events.</p>
@@ -74,7 +72,6 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
       <p>Most of the room is talking, dancing and meeting new people. Some guests play — in spaces set aside for it — when interest and consent are mutual. Come solo, as a couple, or with friends.</p>
     </div>
     <div class="sheet menu-card">
-      <p class="kicker">House rules</p>
       <dl class="menu-card__rules">
         <div><dt>21<span class="plus">+</span></dt><dd>We may verify your age</dd></div>
         <div><dt>BYOB</dt><dd>Bring your own drinks</dd></div>
@@ -109,16 +106,17 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
       <p class="kicker">R.S.V.P.</p>
         <h2 id="list-h">Get the next date first.</h2>
         <p>Not ready for Nov 27? This list is only for news of the next party — just your email is needed. Adding a social profile lets us check you're real and a good fit, so we can say yes faster when you book.</p>
-        <p class="form__help">Booking later? That form asks for your SDC handle.</p>
+        <ol class="ticks"><li>Fill in what you like — only email is needed.</li><li>Press “Open email with my details”, then send.</li><li>You’ll hear about the next date first.</li></ol>
+        <p class="form__help">Booking a spot instead? The booking page asks for your SDC handle.</p>
       </div>
       <form class="form" data-mail="guestlist" novalidate>
-      <div class="field"><label for="gl-email">Email <span>(required)</span></label><input id="gl-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="gl-help" placeholder="name@email.com"></div>
+      <div class="field"><label for="gl-email">Email <span>(required)</span></label><input id="gl-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="gl-help"></div>
       <div class="form__row">
-        <div class="field"><label for="gl-name">Name <span>(optional)</span></label><input id="gl-name" name="name" type="text" autocomplete="name" data-label="Name" placeholder="First name is fine"></div>
-        <div class="field"><label for="gl-phone">Phone <span>(optional)</span></label><input id="gl-phone" name="phone" type="tel" autocomplete="tel" data-label="Phone" placeholder="(214) 555-0123"></div>
+        <div class="field"><label for="gl-name">Name <span>(optional)</span></label><input id="gl-name" name="name" type="text" autocomplete="name" data-label="Name"></div>
+        <div class="field"><label for="gl-phone">Phone <span>(optional)</span></label><input id="gl-phone" name="phone" type="tel" autocomplete="tel" data-label="Phone"></div>
       </div>
       <fieldset class="fieldset">
-        <legend>Your profiles <span class="muted">(optional — handle or link)</span></legend>
+        <legend>Your profiles <span class="muted">(optional)</span></legend>
         <div class="form__row">
           <div class="field"><label for="gl-sdc">SDC</label><input id="gl-sdc" name="sdc" type="text" autocomplete="off" data-label="SDC" placeholder="handle or profile link"></div>
           <div class="field"><label for="gl-fet">FetLife</label><input id="gl-fet" name="fetlife" type="text" autocomplete="off" data-label="FetLife" placeholder="handle or profile link"></div>

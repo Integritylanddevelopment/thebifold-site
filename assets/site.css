@@ -881,3 +881,61 @@ h3{text-wrap:balance}
 .vows span{color:var(--text-body);font-size:var(--t-17)}
 .panel-title{padding-left:0}
 .next-line .link-arrow{min-height:0;padding-bottom:0;vertical-align:baseline}
+
+/* ---- SQUINT loop 18 fixes ---- */
+/* gate tickets: perforation + ribbon stub, so the big target reads as a ticket */
+.gate__btn--yes{position:relative;background:var(--blush-100) var(--paper-grain)}
+.gate__btn--yes::before{content:"";position:absolute;top:10%;bottom:10%;left:18%;border-left:2px dashed rgba(20,15,17,.25)}
+.gate__btn--yes::after{content:"";position:absolute;top:0;bottom:0;left:9%;width:6px;background:var(--ribbon-v)}
+.gate__btn--yes .gate__big,.gate__btn--yes .gate__small{padding-left:14%}
+@media (max-width:760px){.gate__btn--yes{min-height:max(150px,40vh);min-height:max(150px,40dvh)}}
+@media (min-width:761px){.split--hosts{grid-template-columns:1fr 1fr!important;gap:var(--s-48)}}
+.split--hosts > .tipped{max-width:none;width:100%}
+.seal--mono{font:italic var(--w-700) var(--t-24)/1 var(--f-display)!important;letter-spacing:0;text-transform:none}
+.vows--liner li{display:grid;grid-template-columns:minmax(14rem,1fr) 2fr;gap:var(--s-32);align-items:baseline;text-align:left}
+.vows--liner span{margin:0;max-width:none}
+@media (max-width:760px){.vows--liner li{grid-template-columns:1fr;gap:var(--s-4)}}
+.qa-head{display:block}
+.qa-head p{margin-top:var(--s-8)}
+.choice{gap:var(--s-16)}
+.field label span,.rsvp__note,.form__help{color:var(--text-body)}
+.wordmark__tag{color:var(--text-body)}
+@media (max-width:360px){.vows b{font-size:var(--t-24)}}
+@media (max-width:1180px){
+  .masthead__row{grid-template-columns:auto 1fr auto;min-height:72px}
+  .masthead .nav{display:none}
+  .masthead .wordmark{align-items:flex-start;grid-column:1}
+  .menu-btn{display:inline-flex;grid-column:3;align-items:center;gap:var(--s-8);min-height:var(--tap);color:var(--text-strong);font:var(--w-600) var(--t-15)/1 var(--f-text);cursor:pointer}
+  .mobile-nav.is-open{display:block}
+}
+@media (min-width:1181px){.mobile-nav,.menu-btn{display:none!important}}
+@media (min-width:1021px) and (max-width:1180px){.mobile-nav{display:none}.mobile-nav.is-open{display:block}.mobile-nav a{display:block;padding:var(--s-12) 0;border-bottom:1px solid var(--border-soft);color:var(--text-strong);text-decoration:none;font:var(--w-500) var(--t-24)/1.2 var(--f-display)}.menu-btn{display:inline-flex!important}}
+
+/* ---- SQUINT loop 19: envelope footer, reply-card ticks, printed house rules ---- */
+.flap{position:relative;height:clamp(64px,9vw,120px);background:var(--surface-page,var(--blush-100));overflow:visible}
+.flap::before{content:"";position:absolute;inset:0;background:var(--ink-900);clip-path:polygon(0 0,50% 100%,100% 0,100% 100%,0 100%)}
+.flap .seal{position:absolute;left:50%;bottom:-1.6rem;transform:translateX(-50%) rotate(-12deg);width:3.4rem;height:3.4rem;z-index:2}
+.colophon{padding-top:var(--s-64)}
+.colophon::before{display:none}
+.colophon{border-top:0}
+body > .colophon,.colophon{position:relative}
+.flap{margin-bottom:0}
+.seal--inline{position:static!important;display:inline-grid!important;vertical-align:middle;width:2rem!important;height:2rem!important;font-size:1rem!important;margin-left:var(--s-8)}
+.route__sealed{padding-right:0}
+/* reply-card choice = tick boxes */
+.choice{display:flex!important;flex-wrap:wrap;gap:var(--s-8) var(--s-32)}
+.choice label{border:0!important;background:none!important;padding:0!important;min-height:var(--tap);font:var(--w-600) var(--t-17)/1.2 var(--f-text)}
+.choice input{appearance:none;-webkit-appearance:none;width:22px;height:22px;border:1.5px solid var(--ink-700);border-radius:0;display:inline-grid;place-items:center;margin:0;background:transparent}
+.choice input:checked{background:linear-gradient(45deg,transparent 45%,var(--lip-500) 45% 58%,transparent 58%),linear-gradient(-45deg,transparent 45%,var(--lip-500) 45% 58%,transparent 58%)}
+.choice input:focus-visible{box-shadow:var(--focus)}
+/* printed house rules */
+.rules--card{display:block;max-width:880px}
+.rules--card .rule{padding:var(--s-24) 0;border-top:1px solid var(--border-soft)}
+.rules--card .rule:first-child{border-top:0}
+.rules--card .rule:last-child:nth-child(odd){grid-column:auto}
+.vows{max-width:none}
+.menu-card__rules dt{line-height:1.1}
+.menu-card__rules div{align-items:first baseline}
+.vows--liner li{align-items:first baseline}
+::placeholder{color:var(--ink-500);opacity:1}
+@media (max-width:760px){h2{font-size:max(2rem,var(--t-28))}}

@@ -90,6 +90,7 @@ GATE = '''<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label
 '''
 
 FOOTER = f'''<footer class="colophon" id="site-footer">
+  <div class="flap" aria-hidden="true"><span class="seal seal--mono">B</span></div>
   <div class="wrap colophon__card">
     <p class="wordmark colophon__mark"><span class="wordmark__name">The <i>Bi</i>Fold</span><span class="wordmark__tag">Open on both sides</span></p>
     <p class="colophon__blurb">Monthly, screened, consent-first parties for bisexual and bi&#8209;curious adults in the Dallas Design District.</p>
