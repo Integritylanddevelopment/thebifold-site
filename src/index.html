@@ -28,7 +28,7 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
         <ul class="tariff" aria-label="Donation to attend, by guest type">
           <li><span class="tariff__name">Couple</span><span class="tariff__dots"></span><span class="tariff__price num">$150</span><span class="tariff__help">One donation per couple.</span></li>
           <li><span class="tariff__name">Single man</span><span class="tariff__dots"></span><span class="tariff__price num">$175</span><span class="tariff__help">One donation per person.</span></li>
-          <li><span class="tariff__name">Single woman</span><span class="tariff__dots"></span><span class="tariff__price num">$0.01</span><span class="tariff__help">Single women pay 1¢ — just so we can screen every guest.</span></li>
+          <li><span class="tariff__name">Single woman</span><span class="tariff__dots"></span><span class="tariff__price num">1¢</span><span class="tariff__help">Single women pay $0.01 — just so we can screen every guest.</span></li>
           <li><span class="tariff__name">Cabana add-on</span><span class="tariff__dots"></span><span class="tariff__price num">$50</span><span class="tariff__help">Add-on — you still need an entry donation. Only 3.</span></li>
         </ul>
         <p class="rsvp__note">Every guest is reviewed. The private address is sent after you're approved. Donations are final — no refunds.</p>
@@ -78,7 +78,7 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
 </section>
 
 <section class="section" aria-labelledby="night-h">
-  <div class="wrap split">
+  <div class="wrap split split--night">
     <div>
             <h2 id="night-h">What the night is like.</h2>
       <p class="lede">Once a month, in a private lifestyle-only space in the Dallas Design District.</p>
@@ -116,9 +116,9 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
 <section class="section liner" aria-labelledby="list-h" id="next-date">
   <div class="wrap">
     <div class="reply">
-      <p class="kicker">Not ready for Nov 27? · R.S.V.P.</p>
+      <p class="kicker">R.S.V.P.</p>
       <h2 id="list-h">Get the next date first.</h2>
-      <p>This list is only for news of the next party — just your email is needed. Adding a social profile lets us check you're real and a good fit, so we can say yes faster when you book.</p>
+      <p>Not ready for Nov 27? This list is only for news of the next party — just your email is needed. Adding a social profile lets us check you're real and a good fit, so we can say yes faster when you book.</p>
       <form class="form" data-mail="guestlist" novalidate>
       <div class="field"><label for="gl-email">Email <span>(required)</span></label><input id="gl-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="gl-help"></div>
       <div class="form__row">
@@ -128,7 +128,7 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
       <fieldset class="fieldset">
         <legend>Your profiles <span class="muted">(optional — handle or link)</span></legend>
         <div class="form__row">
-          <div class="field"><label for="gl-sdc">SDC</label><input id="gl-sdc" name="sdc" type="text" autocomplete="off" data-label="SDC"></div>
+          <div class="field"><label for="gl-sdc">SDC <span>(needed later to book)</span></label><input id="gl-sdc" name="sdc" type="text" autocomplete="off" data-label="SDC"></div>
           <div class="field"><label for="gl-fet">FetLife</label><input id="gl-fet" name="fetlife" type="text" autocomplete="off" data-label="FetLife"></div>
         </div>
         <div class="form__row">
@@ -141,7 +141,6 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
       <div><button class="btn" type="submit">Open email with my details</button></div>
       <p class="form__help mail-fallback" hidden>No email app opened? Write to <a href="mailto:admin@thebifold.com">admin@thebifold.com</a>.</p>
     </form>
-      <p class="reply__foot">Booking a spot is separate: it happens on the booking page, which asks for your SDC handle.</p>
     </div>
   </div>
 </section>
