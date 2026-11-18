@@ -75,7 +75,7 @@ PARTNERS = ''
 TARIFF = '''<ul class="tariff" aria-label="Donation to attend, by guest type">
           <li><span class="tariff__name">Couple</span><span class="tariff__dots"></span><span class="tariff__price num">$150</span><span class="tariff__help">One donation per couple.</span></li>
           <li><span class="tariff__name">Single man</span><span class="tariff__dots"></span><span class="tariff__price num">$175</span><span class="tariff__help">One donation per person.</span></li>
-          <li><span class="tariff__name">Single woman</span><span class="tariff__dots"></span><span class="tariff__price num">$0.01</span><span class="tariff__help">Not a fee — just so we can screen every guest.</span></li>
+          <li><span class="tariff__name">Single woman</span><span class="tariff__dots"></span><span class="tariff__price num">$0.01</span><span class="tariff__help">Practically free — the penny booking lets us screen every guest.</span></li>
           <li><span class="tariff__name">Cabana add-on</span><span class="tariff__dots"></span><span class="tariff__price num">$50</span><span class="tariff__help">Add-on — you still need an entry donation. Only 3.</span></li>
         </ul>'''
 
