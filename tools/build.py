@@ -55,7 +55,7 @@ def shell(meta, body):
     <nav class="nav nav--left" aria-label="Main">{nav(NAV_L, cur)}</nav>
     <a class="wordmark" href="/"><span class="wordmark__name">The <i>Bi</i>Fold</span><span class="wordmark__tag">Open on both sides</span></a>
     <nav class="nav nav--right" aria-label="More">{nav(NAV_R, cur)}<a class="btn btn--small masthead__cta" href="{BOOK}">Request access</a></nav>
-    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav"><span>Menu</span></button>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav"><i class="menu-btn__mark" aria-hidden="true"></i><span>Menu</span></button>
   </div>
   <nav class="wrap mobile-nav" id="mobile-nav" aria-label="Mobile">{nav(NAV_L + NAV_R, cur)}<a class="mobile-nav__cta" href="{BOOK}">Request access</a></nav>
 </header>
@@ -87,7 +87,7 @@ FOOTER = f'''<footer class="colophon" id="site-footer">
     <p class="wordmark colophon__mark"><span class="wordmark__name">The <i>Bi</i>Fold</span><span class="wordmark__tag">Open on both sides</span></p>
     <p class="colophon__blurb">Monthly, screened, consent-first parties for bisexual and bi&#8209;curious adults in the Dallas Design District.</p>
     <nav class="colophon__links" aria-label="Site index"><a href="/events">The next party</a><a href="/about">Your hosts</a><a href="/guide">Before you go</a><a href="/faq">FAQ</a><a href="/standards">Standards</a><a href="/dress-code">Dress code</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/partners">Partners</a><a href="/contact">Contact</a></nav>
-    <ul class="colophon__contact"><li>Design District, Dallas</li><li>Typically 9 pm – 2 am</li><li><a href="tel:+12146999655">(214)&nbsp;699-9655</a></li><li><a href="mailto:admin@thebifold.com">admin@thebifold.com</a></li></ul>
+    <ul class="colophon__contact"><li>Design District, Dallas</li><li>Typically 9 pm to 2 am</li><li><a href="tel:+12146999655">(214)&nbsp;699-9655</a></li><li><a href="mailto:admin@thebifold.com">admin@thebifold.com</a></li></ul>
     <div class="colophon__fine"><p>© 2026 The BiFold · Adults only · Spots, donations and approval are handled on our <a href="{BOOK}">secure booking page</a>.</p></div>
   </div>
 </footer>'''

@@ -691,3 +691,35 @@ p,li,dd{text-wrap:pretty}
   .step--sealed .seal{display:inline-grid!important;position:static;grid-column:2;grid-row:1 / span 2;align-self:start;width:2.8rem;height:2.8rem;font-size:.5rem}
 }
 .facts dd .link-arrow{font:var(--w-600) var(--t-15)/1.4 var(--f-text);color:var(--text-strong)}
+
+/* ---- SQUINT loop 10 fixes ---- */
+.nowrap{white-space:nowrap}
+h3{text-wrap:balance}
+.contact-form{max-width:none}
+.contact-form .form{max-width:none}
+:root{--border-soft:rgba(20,15,17,.22)}
+.tariff__dots{border-bottom-color:rgba(20,15,17,.6)}
+.steps::before{right:7rem}
+.step--sealed .seal{top:-1.3rem;right:.5rem}
+@media (min-width:761px){.gate{grid-template-rows:1fr auto auto 1fr}.gate::after{content:"";display:block}}
+@media (max-width:760px){.step--sealed .seal{display:none!important}.step--sealed{display:block}}
+@media (max-width:480px){.factstrip{grid-template-columns:1fr}.factstrip div{border-left:0!important;padding-left:0!important;border-top:1px solid var(--border-soft)}.factstrip div:first-child{border-top:0}}
+
+/* ---- SQUINT loop 11 fixes ---- */
+.fieldset{border-top:0;padding-top:0}
+.split > .tipped{justify-self:start}
+.facts dd .link-arrow{margin-top:var(--s-4)}
+.pairs--rows{grid-template-columns:1fr;gap:0;border-top:1px solid var(--border-soft);padding-top:0}
+.pairs--rows div{display:grid;grid-template-columns:minmax(14rem,1fr) 2fr;gap:var(--s-32);padding:var(--s-20) 0;border-bottom:1px solid var(--border-soft);align-items:baseline}
+.pairs--rows dt{margin:0}
+.menu-btn{border:0;background:transparent;padding:0 var(--s-8);gap:var(--s-12)}
+.menu-btn__mark{display:inline-block;width:22px;height:14px;background:linear-gradient(var(--bi-magenta),var(--bi-magenta)) 0 0/100% 2px no-repeat,linear-gradient(var(--bi-lavender),var(--bi-lavender)) 0 6px/100% 2px no-repeat,linear-gradient(var(--bi-royal),var(--bi-royal)) 0 12px/100% 2px no-repeat}
+.menu-btn[aria-expanded="true"] .menu-btn__mark{background:linear-gradient(var(--ink-900),var(--ink-900)) 0 6px/100% 2px no-repeat}
+@media (max-width:760px){
+  .spread::after{display:none}
+  .colophon{padding-bottom:var(--s-32)}
+  .dock-visible .colophon{padding-bottom:calc(var(--s-32) + 76px)}
+  .colophon__links{justify-items:start;width:max-content;max-width:100%;margin:0 auto}
+  .pairs--rows div{grid-template-columns:1fr;gap:var(--s-4)}
+}
+@media (max-width:480px){.colophon__contact{flex-direction:column;align-items:center;gap:var(--s-4)}}

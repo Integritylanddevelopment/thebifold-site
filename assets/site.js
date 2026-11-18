@@ -62,7 +62,7 @@
   var first = document.querySelector('main > section');
   if (dock && first && 'IntersectionObserver' in window) {
     doc.classList.add('dock-managed');
-    new IntersectionObserver(function (en) { dock.classList.toggle('is-on', !en[0].isIntersecting); }, { rootMargin: '-120px 0px 0px 0px' }).observe(first);
+    new IntersectionObserver(function (en) { dock.classList.toggle('is-on', !en[0].isIntersecting); doc.classList.toggle('dock-visible', !en[0].isIntersecting); }, { rootMargin: '-120px 0px 0px 0px' }).observe(first);
   }
 
   /* ---------- Mobile menu ---------- */
