@@ -18,7 +18,6 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
         </ul>
         <div class="invite__actions">
           <a class="btn" href="{BOOK}">Request access</a>
-          <a class="link-arrow" href="/events">See the Nov 27 party {ARROW}</a>
           <a class="link-arrow" href="#next-date">Not ready? Get the next date {ARROW}</a>
         </div>
       </div>
@@ -110,10 +109,10 @@ description: Monthly, screened, consent-first parties in the Dallas Design Distr
         <p class="form__help">Booking a spot instead? The booking page asks for your SDC handle.</p>
       </div>
       <form class="form" data-mail="guestlist" novalidate>
-      <div class="field"><label for="gl-email">Email <span>(required)</span></label><input id="gl-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="gl-help"></div>
+      <div class="field"><label for="gl-email">Email <span>(required)</span></label><input id="gl-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" data-label="Email" aria-describedby="gl-help"></div>
       <div class="form__row">
-        <div class="field"><label for="gl-name">Name <span>(optional)</span></label><input id="gl-name" name="name" type="text" autocomplete="name" data-label="Name"></div>
-        <div class="field"><label for="gl-phone">Phone <span>(optional)</span></label><input id="gl-phone" name="phone" type="tel" autocomplete="tel" data-label="Phone"></div>
+        <div class="field"><label for="gl-name">Name <span>(optional)</span></label><input id="gl-name" name="name" type="text" autocomplete="name" placeholder="first name is fine" data-label="Name"></div>
+        <div class="field"><label for="gl-phone">Phone <span>(optional)</span></label><input id="gl-phone" name="phone" type="tel" autocomplete="tel" placeholder="for a text reminder" data-label="Phone"></div>
       </div>
       <fieldset class="fieldset">
         <legend>Your profiles <span class="muted">(optional)</span></legend>
