@@ -29,25 +29,25 @@ description: Questions for Summer and Mike, or get the next BiFold party date fi
               <label><input type="radio" name="intent" value="question"> Ask a question</label>
             </div>
           </fieldset>
-          <div class="field"><label for="c-email">Email <span>(required)</span></label><input id="c-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="c-help"></div>
+          <div class="field"><label for="c-email">Email <span>(required)</span></label><input id="c-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="c-help" placeholder="name@email.com"></div>
           <div class="form__row">
-            <div class="field"><label for="c-name">Name <span>(optional)</span></label><input id="c-name" name="name" type="text" autocomplete="name" data-label="Name"></div>
-            <div class="field"><label for="c-phone">Phone <span>(optional)</span></label><input id="c-phone" name="phone" type="tel" autocomplete="tel" data-label="Phone"></div>
+            <div class="field"><label for="c-name">Name <span>(optional)</span></label><input id="c-name" name="name" type="text" autocomplete="name" data-label="Name" placeholder="First name is fine"></div>
+            <div class="field"><label for="c-phone">Phone <span>(optional)</span></label><input id="c-phone" name="phone" type="tel" autocomplete="tel" data-label="Phone" placeholder="(214) 555-0123"></div>
           </div>
           <fieldset class="fieldset">
             <legend>Your profiles <span class="muted">(optional — handle or link)</span></legend>
             <p class="form__help mt-0">Adding a profile lets us check you're real and a good fit — so we can say yes faster.</p>
             <div class="form__row">
-              <div class="field"><label for="c-sdc">SDC <span>(needed later to book)</span></label><input id="c-sdc" name="sdc" type="text" autocomplete="off" data-label="SDC"></div>
-              <div class="field"><label for="c-fet">FetLife</label><input id="c-fet" name="fetlife" type="text" autocomplete="off" data-label="FetLife"></div>
+              <div class="field"><label for="c-sdc">SDC</label><input id="c-sdc" name="sdc" type="text" autocomplete="off" data-label="SDC" placeholder="handle or profile link"></div>
+              <div class="field"><label for="c-fet">FetLife</label><input id="c-fet" name="fetlife" type="text" autocomplete="off" data-label="FetLife" placeholder="handle or profile link"></div>
             </div>
             <div class="form__row">
-              <div class="field"><label for="c-reddit">Reddit</label><input id="c-reddit" name="reddit" type="text" autocomplete="off" data-label="Reddit"></div>
-              <div class="field"><label for="c-sniffies">Sniffies</label><input id="c-sniffies" name="sniffies" type="text" autocomplete="off" data-label="Sniffies"></div>
+              <div class="field"><label for="c-reddit">Reddit</label><input id="c-reddit" name="reddit" type="text" autocomplete="off" data-label="Reddit" placeholder="u/handle"></div>
+              <div class="field"><label for="c-sniffies">Sniffies</label><input id="c-sniffies" name="sniffies" type="text" autocomplete="off" data-label="Sniffies" placeholder="handle"></div>
             </div>
           </fieldset>
           <div class="field" data-for="question"><label for="c-msg">Your question</label><textarea id="c-msg" name="message" data-label="Message"></textarea></div>
-          <p class="form__help" id="c-help">Opens your email app. Nothing is saved here.</p>
+          <p class="form__help" id="c-help">Your email app opens with this filled in. Nothing is stored on this site.</p>
           <p class="status" role="status" aria-live="polite"></p>
           <div><button class="btn" type="submit" data-label-guestlist="Open email with my details" data-label-question="Open email to the hosts">Open email with my details</button></div>
           <p class="form__help mail-fallback" hidden>No email app opened? Write to <a href="mailto:admin@thebifold.com">admin@thebifold.com</a>.</p>

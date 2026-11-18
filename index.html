@@ -26,7 +26,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="The BiFold — adults only" hidden>
   <span class="gate__space" aria-hidden="true"></span>
-  <div class="gate__mark wordmark" aria-hidden="true"><span class="wordmark__name">The <i>Bi</i>Fold</span><span class="gate__place">Dallas</span></div>
+  <div class="gate__mark wordmark" aria-hidden="true"><span class="wordmark__name">The <i>Bi</i>Fold</span></div>
   <div class="gate__choices">
     <button class="gate__btn gate__btn--yes" id="gate-yes" type="button"><span class="gate__big">I'm 21<span class="plus">+</span></span><span class="gate__small">Adult bi parties</span></button>
     <a class="gate__btn gate__btn--no" id="gate-no" href="https://google.com" rel="nofollow"><span class="gate__big">Leave</span></a>
@@ -57,6 +57,7 @@
         <div class="invite__actions">
           <a class="btn" href="https://www.thebifold.com/event/bi-one-get-one-black-friday/#em-event-booking-form">Request access</a>
           <a class="link-arrow" href="/events">See the Nov 27 party <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="link-arrow" href="#next-date">Not ready? Get the next date <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </div>
       <span class="spread__fold" aria-hidden="true"></span>
@@ -66,10 +67,15 @@
         <ul class="tariff" aria-label="Donation to attend, by guest type">
           <li><span class="tariff__name">Couple</span><span class="tariff__dots"></span><span class="tariff__price num">$150</span><span class="tariff__help">One donation per couple.</span></li>
           <li><span class="tariff__name">Single man</span><span class="tariff__dots"></span><span class="tariff__price num">$175</span><span class="tariff__help">One donation per person.</span></li>
-          <li><span class="tariff__name">Single woman</span><span class="tariff__dots"></span><span class="tariff__price num">1¢</span><span class="tariff__help">Single women pay $0.01 — just so we can screen every guest.</span></li>
+          <li><span class="tariff__name">Single woman</span><span class="tariff__dots"></span><span class="tariff__price num">$0.01</span><span class="tariff__help">Not a fee — just so we can screen every guest.</span></li>
           <li><span class="tariff__name">Cabana add-on</span><span class="tariff__dots"></span><span class="tariff__price num">$50</span><span class="tariff__help">Add-on — you still need an entry donation. Only 3.</span></li>
         </ul>
-        <p class="rsvp__note">Every guest is reviewed. The private address is sent after you're approved. Donations are final — no refunds.</p>
+        <ol class="route" aria-label="How access works">
+          <li><b>Request access</b> on our booking page</li>
+          <li><b>We review you</b> — every guest, every time</li>
+          <li class="route__sealed"><b>Get the address</b> once you're approved<span class="seal" aria-hidden="true">sealed</span></li>
+        </ol>
+        <p class="rsvp__note">Donations are final — no refunds.</p>
       </div>
     </div>
   </div>
@@ -87,7 +93,7 @@
 </section>
 
 <section class="section" aria-labelledby="hosts-h">
-  <div class="wrap split split--fold">
+  <div class="wrap split split--fold split--hosts">
     <figure class="tipped ratio-host">
       <img src="/assets/img/hosts-summer-mike.webp" width="420" height="453" alt="Summer and Mike, the hosts of The BiFold, dressed for a night out">
       <figcaption>Summer &amp; Mike, your hosts</figcaption>
@@ -103,18 +109,6 @@
   </div>
 </section>
 
-<section class="section liner" aria-labelledby="steps-h">
-  <div class="wrap">
-    <p class="kicker">How access works</p>
-    <h2 id="steps-h">Three steps to get in.</h2>
-    <ol class="steps">
-      <li class="step"><h3>Request access</h3><p>Pick your spot on our booking page and add your SDC handle there, so we can see who you are.</p></li>
-      <li class="step"><h3>We review you</h3><p>Every guest, every time. It keeps the room balanced and the people in it kind.</p></li>
-      <li class="step step--sealed"><h3>Get the address</h3><p>Once you're approved, we send the private location. Then just show up dressed up.</p><span class="seal" aria-hidden="true">sealed</span></li>
-    </ol>
-      </div>
-</section>
-
 <section class="section" aria-labelledby="night-h">
   <div class="wrap split split--night">
     <div>
@@ -127,7 +121,7 @@
       <dl class="menu-card__rules">
         <div><dt>21<span class="plus">+</span></dt><dd>We may verify your age</dd></div>
         <div><dt>BYOB</dt><dd>Bring your own drinks</dd></div>
-        <div><dt>Play on-site</dt><dd>Always optional, in spaces set aside</dd></div>
+        <div><dt>Play on‑site</dt><dd>Always optional, in spaces set aside</dd></div>
         <div><dt>Dress code</dt><dd>Upscale — <a href="/dress-code">effort expected</a></dd></div>
       </dl>
     </div>
@@ -135,8 +129,8 @@
 </section>
 
 <section class="section" aria-labelledby="faq-h">
-  <div class="wrap split split--top split--qa">
-    <div>
+  <div class="wrap">
+    <div class="qa-head">
       <h2 id="faq-h">Five first‑timer questions.</h2>
       <p class="muted">The short answers. The full FAQ covers privacy, check-in and refunds.</p>
       <p class="mt-24"><a class="link-arrow" href="/faq">All questions <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
@@ -153,28 +147,31 @@
 
 <section class="section liner" aria-labelledby="list-h" id="next-date">
   <div class="wrap">
-    <div class="reply">
+    <div class="reply reply--split">
+      <div class="reply__intro">
       <p class="kicker">R.S.V.P.</p>
-      <h2 id="list-h">Get the next date first.</h2>
-      <p>Not ready for Nov 27? This list is only for news of the next party — just your email is needed. Adding a social profile lets us check you're real and a good fit, so we can say yes faster when you book.</p>
+        <h2 id="list-h">Get the next date first.</h2>
+        <p>Not ready for Nov 27? This list is only for news of the next party — just your email is needed. Adding a social profile lets us check you're real and a good fit, so we can say yes faster when you book.</p>
+        <p class="form__help">Booking later? That form asks for your SDC handle.</p>
+      </div>
       <form class="form" data-mail="guestlist" novalidate>
-      <div class="field"><label for="gl-email">Email <span>(required)</span></label><input id="gl-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="gl-help"></div>
+      <div class="field"><label for="gl-email">Email <span>(required)</span></label><input id="gl-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="gl-help" placeholder="name@email.com"></div>
       <div class="form__row">
-        <div class="field"><label for="gl-name">Name <span>(optional)</span></label><input id="gl-name" name="name" type="text" autocomplete="name" data-label="Name"></div>
-        <div class="field"><label for="gl-phone">Phone <span>(optional)</span></label><input id="gl-phone" name="phone" type="tel" autocomplete="tel" data-label="Phone"></div>
+        <div class="field"><label for="gl-name">Name <span>(optional)</span></label><input id="gl-name" name="name" type="text" autocomplete="name" data-label="Name" placeholder="First name is fine"></div>
+        <div class="field"><label for="gl-phone">Phone <span>(optional)</span></label><input id="gl-phone" name="phone" type="tel" autocomplete="tel" data-label="Phone" placeholder="(214) 555-0123"></div>
       </div>
       <fieldset class="fieldset">
         <legend>Your profiles <span class="muted">(optional — handle or link)</span></legend>
         <div class="form__row">
-          <div class="field"><label for="gl-sdc">SDC <span>(needed later to book)</span></label><input id="gl-sdc" name="sdc" type="text" autocomplete="off" data-label="SDC"></div>
-          <div class="field"><label for="gl-fet">FetLife</label><input id="gl-fet" name="fetlife" type="text" autocomplete="off" data-label="FetLife"></div>
+          <div class="field"><label for="gl-sdc">SDC</label><input id="gl-sdc" name="sdc" type="text" autocomplete="off" data-label="SDC" placeholder="handle or profile link"></div>
+          <div class="field"><label for="gl-fet">FetLife</label><input id="gl-fet" name="fetlife" type="text" autocomplete="off" data-label="FetLife" placeholder="handle or profile link"></div>
         </div>
         <div class="form__row">
-          <div class="field"><label for="gl-reddit">Reddit</label><input id="gl-reddit" name="reddit" type="text" autocomplete="off" data-label="Reddit"></div>
-          <div class="field"><label for="gl-sniffies">Sniffies</label><input id="gl-sniffies" name="sniffies" type="text" autocomplete="off" data-label="Sniffies"></div>
+          <div class="field"><label for="gl-reddit">Reddit</label><input id="gl-reddit" name="reddit" type="text" autocomplete="off" data-label="Reddit" placeholder="u/handle"></div>
+          <div class="field"><label for="gl-sniffies">Sniffies</label><input id="gl-sniffies" name="sniffies" type="text" autocomplete="off" data-label="Sniffies" placeholder="handle"></div>
         </div>
       </fieldset>
-      <p class="form__help" id="gl-help">Opens your email app. Nothing is saved here.</p>
+      <p class="form__help" id="gl-help">Your email app opens with this filled in. Nothing is stored on this site.</p>
       <p class="status" role="status" aria-live="polite"></p>
       <div><button class="btn" type="submit">Open email with my details</button></div>
       <p class="form__help mail-fallback" hidden>No email app opened? Write to <a href="mailto:admin@thebifold.com">admin@thebifold.com</a>.</p>

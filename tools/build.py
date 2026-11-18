@@ -72,9 +72,16 @@ def shell(meta, body):
 
 PARTNERS = ''
 
+TARIFF = '''<ul class="tariff" aria-label="Donation to attend, by guest type">
+          <li><span class="tariff__name">Couple</span><span class="tariff__dots"></span><span class="tariff__price num">$150</span><span class="tariff__help">One donation per couple.</span></li>
+          <li><span class="tariff__name">Single man</span><span class="tariff__dots"></span><span class="tariff__price num">$175</span><span class="tariff__help">One donation per person.</span></li>
+          <li><span class="tariff__name">Single woman</span><span class="tariff__dots"></span><span class="tariff__price num">$0.01</span><span class="tariff__help">Not a fee — just so we can screen every guest.</span></li>
+          <li><span class="tariff__name">Cabana add-on</span><span class="tariff__dots"></span><span class="tariff__price num">$50</span><span class="tariff__help">Add-on — you still need an entry donation. Only 3.</span></li>
+        </ul>'''
+
 GATE = '''<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="The BiFold — adults only" hidden>
   <span class="gate__space" aria-hidden="true"></span>
-  <div class="gate__mark wordmark" aria-hidden="true"><span class="wordmark__name">The <i>Bi</i>Fold</span><span class="gate__place">Dallas</span></div>
+  <div class="gate__mark wordmark" aria-hidden="true"><span class="wordmark__name">The <i>Bi</i>Fold</span></div>
   <div class="gate__choices">
     <button class="gate__btn gate__btn--yes" id="gate-yes" type="button"><span class="gate__big">I'm 21<span class="plus">+</span></span><span class="gate__small">Adult bi parties</span></button>
     <a class="gate__btn gate__btn--no" id="gate-no" href="https://google.com" rel="nofollow"><span class="gate__big">Leave</span></a>
@@ -100,7 +107,7 @@ def parse(p):
     for line in head.splitlines():
         k, _, v = line.partition(':')
         meta[k.strip()] = v.strip()
-    body = body.replace('{BOOK}', BOOK).replace('{ARROW}', ARROW)
+    body = body.replace('{TARIFF}', TARIFF).replace('{BOOK}', BOOK).replace('{ARROW}', ARROW)
     return meta, body
 
 
