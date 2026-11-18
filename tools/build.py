@@ -43,7 +43,7 @@ def shell(meta, body):
 <meta name="rating" content="adult">
 <link rel="icon" href="/assets/img/favicon-32.webp" type="image/webp">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/bodoni-moda-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/dm-serif-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 <script src="/assets/head.js"></script>
@@ -83,7 +83,7 @@ GATE = '''<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label
   <span class="gate__space" aria-hidden="true"></span>
   <div class="gate__mark wordmark" aria-hidden="true"><span class="wordmark__name">The <i>Bi</i>Fold</span></div>
   <div class="gate__choices">
-    <button class="gate__btn gate__btn--yes" id="gate-yes" type="button"><span class="gate__big">I'm 21<span class="plus">+</span></span><span class="gate__small">Adult bi parties</span></button>
+    <button class="gate__btn gate__btn--yes" id="gate-yes" type="button"><span class="gate__big">I’m 21<span class="plus">+</span></span><span class="gate__small">Adult bi parties</span></button>
     <a class="gate__btn gate__btn--no" id="gate-no" href="https://google.com" rel="nofollow"><span class="gate__big">Leave</span></a>
   </div>
 </div>
