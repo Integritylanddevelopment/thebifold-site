@@ -723,3 +723,72 @@ h3{text-wrap:balance}
   .pairs--rows div{grid-template-columns:1fr;gap:var(--s-4)}
 }
 @media (max-width:480px){.colophon__contact{flex-direction:column;align-items:center;gap:var(--s-4)}}
+
+/* ---- SQUINT loop 12: invitation-native components ---- */
+/* vows: the three promises set like lines engraved on the card */
+.vows{list-style:none;margin:0 auto;padding:var(--s-32) 0;max-width:860px;text-align:center;border-top:1px solid var(--border-strong);border-bottom:1px solid var(--border-strong)}
+.vows li{margin:0;padding:var(--s-16) 0}
+.vows li+li{border-top:1px solid var(--border-soft)}
+.vows b{display:block;font:italic var(--w-500) clamp(var(--t-28),3vw,var(--t-40))/1.15 var(--f-display);color:var(--text-strong)}
+.vows span{display:block;margin:var(--s-8) auto 0;max-width:52ch;font-size:var(--t-15);color:var(--text-muted);text-wrap:balance}
+/* typeset Q&A — printed, not an accordion */
+.qa--typeset,.qa-list{border-top:1px solid var(--border-strong);margin:0;max-width:none}
+.qa-row{display:grid;grid-template-columns:minmax(14rem,2fr) 3fr;gap:var(--s-32);padding:var(--s-20) 0;border-bottom:1px solid var(--border-soft);align-items:baseline}
+.qa-row dt{font:italic var(--w-500) var(--t-20)/1.3 var(--f-display);color:var(--text-strong)}
+.qa-row dd{margin:0}
+.qa-row dd p{max-width:62ch}
+.qa-row dd p:last-child{margin-bottom:0}
+.qa h2{border-top:0}
+.qa--typeset h2{margin:var(--s-48) 0 var(--s-8)}
+.qa--typeset h2.mt-0{margin-top:0}
+.split--qa .qa-row{grid-template-columns:1fr 1.4fr}
+/* the reply card (R.S.V.P.) */
+.reply{max-width:880px;margin:0 auto;background:var(--blush-50) var(--paper-grain);color:var(--ink-700);padding:clamp(var(--s-24),5vw,var(--s-64));position:relative;box-shadow:var(--e4);
+  --surface-raised:#fffaf7;--text-strong:var(--ink-900);--text-body:var(--ink-700);--text-muted:var(--ink-600);--border-soft:rgba(20,15,17,.22);--border-strong:rgba(20,15,17,.5);--focus:0 0 0 2px var(--blush-50),0 0 0 4px var(--lip-600);--action:var(--lip-500);--action-hover:var(--lip-600);--text-on-action:#fff8f5;--link:var(--lip-700)}
+.reply::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--ribbon)}
+.reply::after{content:"";position:absolute;inset:var(--s-12);border:1px solid var(--border-soft);pointer-events:none}
+.reply > *{position:relative;z-index:1}
+.reply h2{color:var(--ink-900)}
+.reply .kicker{color:var(--ink-600)}
+.liner .reply .field input,.liner .reply .field textarea{background:transparent;color:var(--ink-900);border:0;border-bottom:1.5px solid var(--ink-500);box-shadow:none;padding-left:0}
+.reply .field input,.reply .field textarea{background:transparent;border:0;border-bottom:1.5px solid var(--ink-500);box-shadow:none;padding-left:0}
+.reply .field input:focus,.reply .field textarea:focus{border-bottom-color:var(--lip-500);box-shadow:0 2px 0 0 var(--lip-500)}
+.reply .field textarea{border:1.5px solid var(--ink-500);padding-left:var(--s-12)}
+.reply__foot{font-size:var(--t-15);color:var(--ink-600);margin:var(--s-24) 0 0;border-top:1px solid var(--border-soft);padding-top:var(--s-16)}
+.reply .form{margin-top:var(--s-24)}
+.promise-block{border-top:1px solid var(--border-strong);padding-top:var(--s-32)}
+.next-line{margin-top:var(--s-32);font-size:var(--t-17)}
+.next-line .link-arrow{min-height:0}
+.gate__place{display:block;font:var(--w-600) var(--t-12)/1 var(--f-text);letter-spacing:.32em;text-transform:uppercase;color:var(--blush-300);margin-top:var(--s-12)}
+/* footer: the back of the card, links set as balanced inline text */
+.colophon__card{border:1px solid rgba(246,233,226,.18);padding:clamp(var(--s-32),5vw,var(--s-64)) clamp(var(--s-20),4vw,var(--s-48));max-width:980px}
+.colophon__links{display:block!important;text-align:center;text-wrap:balance;max-width:none!important;width:auto!important;line-height:2.4}
+.colophon__links a{display:inline!important;padding:0 var(--s-12)!important;white-space:nowrap}
+/* steps as perforated ticket stubs */
+.steps{gap:0}
+.step{padding:3.25rem var(--s-24) var(--s-24);border-left:2px dashed rgba(246,233,226,.22)}
+.step:first-child{border-left:0;padding-left:0}
+.step::before{left:var(--s-24);background:none}
+.step:first-child::before{left:0}
+.steps::before{display:none}
+.step--sealed .seal{top:.4rem;right:var(--s-24)}
+/* misc */
+.plus{font-family:var(--f-display);font-weight:var(--w-900)}
+.facts div:last-child{border-bottom:0;padding-bottom:0}
+.ticks li::before{top:.74em}
+.split > .tipped{max-width:32rem}
+.rules > .rule:last-child:nth-child(odd){grid-column:1/-1}
+@media (max-width:760px){
+  .qa-row,.split--qa .qa-row{grid-template-columns:1fr;gap:var(--s-8)}
+  .sheet{padding:var(--s-24) var(--s-20)}
+  .sheet::after{display:none}
+  .reply::after{display:none}
+  .step{border-left:0;border-top:2px dashed rgba(246,233,226,.22);padding:var(--s-48) 0 var(--s-20)}
+  .step:first-child{border-top:0}
+  .step::before{left:0;top:var(--s-12)}
+}
+.colophon__card{grid-template-columns:minmax(0,1fr)}
+.reply .form{max-width:none}
+.menu-card__rules div{grid-template-columns:11rem 1fr}
+.menu-card__rules dt{white-space:nowrap}
+@media (max-width:760px){.menu-card__rules dt{white-space:normal}}

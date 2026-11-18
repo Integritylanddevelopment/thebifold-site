@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Contact the hosts &amp; join the guest list · The BiFold</title>
-<meta name="description" content="Questions for Summer and Mike, or join The BiFold guest list. Design District, Dallas. (214) 699-9655 · admin@thebifold.com. Parties typically 9 pm to 2 am.">
+<title>Contact the hosts &amp; get the next date · The BiFold</title>
+<meta name="description" content="Questions for Summer and Mike, or get the next BiFold party date first. Design District, Dallas. (214) 699-9655 · admin@thebifold.com. Parties typically 9 pm to 2 am.">
 <link rel="canonical" href="https://thebifold-site.vercel.app/contact">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The BiFold">
-<meta property="og:title" content="Contact the hosts &amp; join the guest list · The BiFold">
-<meta property="og:description" content="Questions for Summer and Mike, or join The BiFold guest list. Design District, Dallas. (214) 699-9655 · admin@thebifold.com. Parties typically 9 pm to 2 am.">
+<meta property="og:title" content="Contact the hosts &amp; get the next date · The BiFold">
+<meta property="og:description" content="Questions for Summer and Mike, or get the next BiFold party date first. Design District, Dallas. (214) 699-9655 · admin@thebifold.com. Parties typically 9 pm to 2 am.">
 <meta property="og:url" content="https://thebifold-site.vercel.app/contact">
 <meta property="og:image" content="https://thebifold-site.vercel.app/assets/img/welcome-table-1200.webp">
 <meta name="twitter:card" content="summary_large_image">
@@ -26,9 +26,9 @@
 <a class="skip" href="#main">Skip to content</a>
 <div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="The BiFold — adults only" hidden>
   <span class="gate__space" aria-hidden="true"></span>
-  <div class="gate__mark wordmark" aria-hidden="true"><span class="wordmark__name">The <i>Bi</i>Fold</span></div>
+  <div class="gate__mark wordmark" aria-hidden="true"><span class="wordmark__name">The <i>Bi</i>Fold</span><span class="gate__place">Dallas</span></div>
   <div class="gate__choices">
-    <button class="gate__btn gate__btn--yes" id="gate-yes" type="button"><span class="gate__big">I'm 21<span class="plus">+</span></span><span class="gate__small">Bi parties, Dallas</span></button>
+    <button class="gate__btn gate__btn--yes" id="gate-yes" type="button"><span class="gate__big">I'm 21<span class="plus">+</span></span><span class="gate__small">Adult bi parties</span></button>
     <a class="gate__btn gate__btn--no" id="gate-no" href="https://google.com" rel="nofollow"><span class="gate__big">Leave</span></a>
   </div>
 </div>
@@ -57,21 +57,21 @@
       <div><dt>Party hours</dt><dd>Typically 9 pm to 2 am</dd></div>
     </dl>
     <div class="contact-form">
-      <div class="sheet" id="guest-list">
+      <div class="sheet reply" id="next-date">
         <h2 class="panel-title">Write to us</h2>
         <form class="form" data-mail="guestlist" novalidate>
           <fieldset class="fieldset">
             <legend>What would you like?</legend>
             <div class="choice">
-              <label><input type="radio" name="intent" value="guestlist" checked> Join the guest list</label>
+              <label><input type="radio" name="intent" value="guestlist" checked> Get the next date first</label>
               <label><input type="radio" name="intent" value="question"> Ask a question</label>
             </div>
           </fieldset>
+          <div class="field"><label for="c-email">Email <span>(required)</span></label><input id="c-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="c-help"></div>
           <div class="form__row">
-            <div class="field"><label for="c-email">Email <span>(required)</span></label><input id="c-email" name="email" type="email" autocomplete="email" required data-label="Email" aria-describedby="c-help"></div>
             <div class="field"><label for="c-name">Name <span>(optional)</span></label><input id="c-name" name="name" type="text" autocomplete="name" data-label="Name"></div>
+            <div class="field"><label for="c-phone">Phone <span>(optional)</span></label><input id="c-phone" name="phone" type="tel" autocomplete="tel" data-label="Phone"></div>
           </div>
-          <div class="field"><label for="c-phone">Phone <span>(optional)</span></label><input id="c-phone" name="phone" type="tel" autocomplete="tel" data-label="Phone"></div>
           <fieldset class="fieldset">
             <legend>Your profiles <span class="muted">(optional — handle or link)</span></legend>
             <p class="form__help mt-0">Adding a profile lets us check you're real and a good fit — so we can say yes faster. To book a spot, the booking page asks for your SDC handle.</p>
@@ -100,7 +100,7 @@
   <div class="wrap colophon__card">
     <p class="wordmark colophon__mark"><span class="wordmark__name">The <i>Bi</i>Fold</span><span class="wordmark__tag">Open on both sides</span></p>
     <p class="colophon__blurb">Monthly, screened, consent-first parties for bisexual and bi&#8209;curious adults in the Dallas Design District.</p>
-    <nav class="colophon__links" aria-label="Site index"><a href="/events">The next party</a><a href="/about">Your hosts</a><a href="/guide">Before you go</a><a href="/faq">FAQ</a><a href="/standards">Standards</a><a href="/dress-code">Dress code</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/partners">Partners</a><a href="/contact">Contact</a></nav>
+    <nav class="colophon__links" aria-label="Site index"><a href="/events">The next party</a> <a href="/about">Your hosts</a> <a href="/guide">Before you go</a> <a href="/faq">FAQ</a> <a href="/standards">Standards</a> <a href="/dress-code">Dress code</a> <a href="/privacy">Privacy</a> <a href="/terms">Terms</a> <a href="/partners">Partners</a> <a href="/contact">Contact</a></nav>
     <ul class="colophon__contact"><li>Design District, Dallas</li><li>Typically 9 pm to 2 am</li><li><a href="tel:+12146999655">(214)&nbsp;699-9655</a></li><li><a href="mailto:admin@thebifold.com">admin@thebifold.com</a></li></ul>
     <div class="colophon__fine"><p>© 2026 The BiFold · Adults only · Spots, donations and approval are handled on our <a href="https://www.thebifold.com/event/bi-one-get-one-black-friday/#em-event-booking-form">secure booking page</a>.</p></div>
   </div>
